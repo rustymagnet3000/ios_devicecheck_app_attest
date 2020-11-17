@@ -13,7 +13,6 @@
 		0F5D46A72562E7EF00C84BD4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F5D46A52562E7EF00C84BD4 /* Main.storyboard */; };
 		0F5D46A92562E7F200C84BD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0F5D46A82562E7F200C84BD4 /* Assets.xcassets */; };
 		0F5D46AC2562E7F200C84BD4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F5D46AA2562E7F200C84BD4 /* LaunchScreen.storyboard */; };
-		0F5D46B92562EBB400C84BD4 /* .xcodesamplecode.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0F5D46B82562EBB400C84BD4 /* .xcodesamplecode.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +24,6 @@
 		0F5D46A82562E7F200C84BD4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0F5D46AB2562E7F200C84BD4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0F5D46AD2562E7F200C84BD4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0F5D46B82562EBB400C84BD4 /* .xcodesamplecode.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = .xcodesamplecode.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,7 +40,6 @@
 		0F5D46932562E7EF00C84BD4 = {
 			isa = PBXGroup;
 			children = (
-				0F5D46B82562EBB400C84BD4 /* .xcodesamplecode.plist */,
 				0F5D469E2562E7EF00C84BD4 /* ios_app_attest */,
 				0F5D469D2562E7EF00C84BD4 /* Products */,
 			);
@@ -127,7 +124,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0F5D46B92562EBB400C84BD4 /* .xcodesamplecode.plist in Resources */,
 				0F5D46AC2562E7F200C84BD4 /* LaunchScreen.storyboard in Resources */,
 				0F5D46A92562E7F200C84BD4 /* Assets.xcassets in Resources */,
 				0F5D46A72562E7EF00C84BD4 /* Main.storyboard in Resources */,
