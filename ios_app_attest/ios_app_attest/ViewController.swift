@@ -7,7 +7,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 
         if let attest = AppAttest(){
-            print(attest.keyID)
+            print(attest.keyIdentifier())
+            attest.preAttestation()
         }
     }
 }
