@@ -52,11 +52,18 @@ final class AppAttest {
         let hash = Data(SHA256.hash(data: challenge))
         
         /* invokes network call to Apple's attest service */
-        attestService.attestKey(self.keyID!, clientDataHash: hash) { attestationObject, error in
+        print("🐝 Calling Apple servers")
+        attestService.attestKey(self.keyID!, clientDataHash: hash) { attestation, error in
+            
             guard error == nil else { return }
-            let attestStr = attestationObject?.base64EncodedString()    // Optional<Data>
-
-            print(attestStr ?? "Problem reading ")
+            guard let attestationObject = attestation else { return }
+            let decodedData: Data? = Data(base64Encoded: attestationObject, options: .ignoreUnknownCharacters)
+            guard let finalDecodedData = decodedData else { return }
+            
+            if let decodedAttestation = String(data: finalDecodedData, encoding: .utf8) {
+                print(decodedAttestation)
+            }
+            
         }
     }
 }
